@@ -1,0 +1,31 @@
+$OrangeColor: #ec6a49;
+$darkBlueColor: #00205c;
+$lightGrayColor: #eef0f3;
+$grayColor: #929295;
+$darkColor: #1d1d22;
+
+@font-face {
+    font-family: "bold";
+    src: url("../../assets/fonts/Fontfabric-IntroBold.otf");
+}
+
+@font-face {
+    font-family: "SemiBoldItalic";
+    src: url("../../assets/fonts/Fontfabric-IntroSemiBoldItalic.otf");
+}
+
+@font-face {
+    font-family: "SemiBold";
+    src: url("../../assets/fonts/Fontfabric-IntroSemiBold.otf");
+}
+
+$fontSizeXxx: 52px;
+
+$fontSize1: 40px;
+$fontSize2: 36px;
+$fontSize3: 25px;
+$fontSize4: 18px;
+$fontSize5: 14px;
+// $fontSize1res: 24px;
+// $fontSize2res: 14px;
+// $fontSize3res: 18px;

@@ -1,0 +1,306 @@
+@import "../vairables/variables.scss";
+
+.contactusDivision {
+    cursor: pointer;
+}
+
+#headers {
+    // margin-bottom: 85px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 12;
+
+    // padding-top: 0;
+    .positionFixedHeader {
+        .logoClick {
+            cursor: pointer;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .commonHeaderSection {
+            // max-width: 1140px;
+            // margin: auto;
+            position: relative;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .navigationSection {
+                display: flex;
+
+                .navigations {
+                    margin-right: 45px;
+                    position: relative;
+
+                    a {
+                        font-size: $fontSize5;
+                        color: #2a2a2a;
+                        font-family: "bold";
+                        text-decoration: none;
+                        opacity: 0.56;
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    .positionList {
+                        border-radius: 8px;
+                        padding: 10px 0px;
+                        position: absolute;
+                        width: max-content;
+                        visibility: hidden;
+                        top: 25px;
+                        transform: translateX(-30%);
+                        // margin-top: 8px;
+                        background-color: #ffffff;
+                        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+                            0 2px 2px rgba(0, 0, 0, 0.11),
+                            0 4px 4px rgba(0, 0, 0, 0.11),
+                            0 8px 8px rgba(0, 0, 0, 0.11),
+                            0 16px 16px rgba(0, 0, 0, 0.11),
+                            0 32px 32px rgba(0, 0, 0, 0.11);
+
+                        // transition: 0.5s;
+                        .individualList {
+                            padding: 10px 25px;
+                            cursor: pointer;
+
+                            p {
+                                margin: 0;
+                                font-family: "SemiBold";
+                                font-size: 14px;
+                                text-decoration: none;
+                                // color: #777b82;
+                                opacity: 0.56;
+                            }
+
+                            &:hover {
+                                background-color: #F1F1F1;
+                            }
+                        }
+
+                        .individualList[data-href="_Partners"] {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        .positionList {
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+
+            .contactSections {
+                .contactusDivision {
+                    padding: 7px 21px;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    border: 2px solid $darkBlueColor;
+                    border-radius: 8px;
+                    opacity: 1;
+                    text-decoration: none;
+
+                    p {
+                        font-size: $fontSize5;
+                        color: $darkBlueColor;
+                        font-family: "bold";
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .hamburgerIcon {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .humburgerOptions {
+            border-bottom-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px;
+            background-color: white;
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+            transition: 0.5s;
+            height: 0px;
+
+            .humburgerOptionsWrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .humbergurOptionsList {
+                    padding: 10px;
+
+                    a {
+                        font-family: "SemiBold";
+                        font-size: $fontSize5;
+                        color: #777b82;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .activeNav {
+            background-color: #f0a794;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            padding: 2px;
+            margin: auto;
+        }
+
+        .activeNavText {
+            opacity: 1 !important;
+        }
+
+        .activeNavMobText {
+            color: $OrangeColor !important;
+        }
+
+        .activeBoxShadow {
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+#footer {
+    background-color: #ffffff;
+
+    .container {
+        padding: 8px 15px;
+    }
+
+    .commonFooterSection {
+        .logoClick {
+            cursor: pointer;
+            width: 90%;
+        }
+
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        // padding: 10px 0px;
+        flex-wrap: wrap;
+
+        .rowReverseMobView {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .copyrightss {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            p {
+                opacity: 0.56;
+                font-size: $fontSize5;
+                color: #2A2A2A;
+                font-family: "SemiBold";
+            }
+        }
+
+        .footerNavigations {
+            display: flex;
+            align-items: center;
+
+            .separator {
+                height: 15px;
+                width: 1px;
+                background-color: #f0a794;
+                margin: 0px 20px;
+                opacity: 0.5;
+            }
+
+            .navigations {
+                display: none;
+
+                &:nth-child(2) {
+                    margin: 0px 10px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .commonFooterSection {
+        flex-direction: column;
+
+        .LogoWrapper {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .rowReverseMobView {
+            flex-direction: column;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .footerNavigations {
+                margin: 5px 0px;
+            }
+        }
+    }
+
+    .positionFixedHeader {
+        .commonHeaderSection {
+            .navigationSection {
+                display: none !important;
+            }
+
+            .contactSections {
+                display: none;
+            }
+        }
+
+        .hamburgerIcon {
+            display: block !important;
+        }
+
+        .humburgerOptions {
+            display: block !important;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:990px) {
+    .commonHeaderSection {
+        .navigationSection {
+            .navigations {
+                margin-right: 25px !important;
+
+                &:last-child {
+                    margin-right: 0px !important;
+                }
+            }
+        }
+    }
+}
+
+// @media only screen and (min-width: 1200px){
+//   .container {
+//       max-width: 1300px;
+//   }
+//   }

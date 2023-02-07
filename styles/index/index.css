@@ -1,0 +1,749 @@
+@font-face {
+    font-family: "bold";
+    src: url("../../assets/fonts/Fontfabric-IntroBold.otf");
+}
+
+@font-face {
+    font-family: "SemiBoldItalic";
+    src: url("../../assets/fonts/Fontfabric-IntroSemiBoldItalic.otf");
+}
+
+@font-face {
+    font-family: "SemiBold";
+    src: url("../../assets/fonts/Fontfabric-IntroSemiBold.otf");
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+html body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html body .main {
+    padding-top: 68px;
+    position: relative;
+    height: 100%;
+}
+
+html body .main .swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+html body .main .swiper-container .swiper-pagination-bullet-active {
+    border: 6.5px solid white;
+    background-color: white;
+    width: 0px !important;
+    height: 0px !important;
+    opacity: 1 !important;
+}
+
+html body .main .swiper-container .swiper-pagination-bullet {
+    background-color: white;
+    opacity: 0.6;
+}
+
+html body .main .swiper-container .swiper-pagination-clickable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+html body .main .swiper-container .swiper-pagination-clickable:focus {
+    outline: none;
+}
+
+html body .main .swiper-container .dotts {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+html body .main .swiper-container .swiper-slide {
+    height: 100%;
+    width: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .bgCover {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .firstSlider video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-filter: brightness(0.7);
+    filter: brightness(0.7);
+}
+
+html body .main .swiper-container .swiper-slide .firstSlider .container {
+    height: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .firstSlider .downButton {
+    cursor: pointer;
+}
+
+html body .main .swiper-container .swiper-slide .firstSlider .row {
+    height: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .firstSlider .row .p-sm-40 {
+    padding: 15px;
+}
+
+@-webkit-keyframes mymove {
+    0% {
+        left: -150px;
+    }
+
+    70% {
+        left: 0px;
+    }
+}
+
+@keyframes mymove {
+    0% {
+        left: -150px;
+    }
+
+    70% {
+        left: 0px;
+    }
+}
+
+html body .main .swiper-container .swiper-slide .firstSlider .row .firstHeader p {
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: 'bold';
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+html body .main .swiper-container .swiper-slide .firstSlider .row .firstSubHeader .bgWrapper {
+    background: #1d1d228c 0% 0% no-repeat padding-box;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 36px;
+}
+
+html body .main .swiper-container .swiper-slide .firstSlider .row .firstSubHeader .bgWrapper p {
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: 'SemiBoldItalic';
+}
+
+html body .main .swiper-container .swiper-slide .firstSlider .row .downButton {
+    position: absolute;
+    bottom: 25%;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider {
+    height: 100%;
+    width: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .bgCover {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url("../../assests/images/HomeImgSizeReduced/businessman-with-light-bulb-his-hand.jpg");
+    background-position: center;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .whiteBackgroud {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.5;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row {
+    height: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .firstColumn {
+    height: 0;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .secondColumn {
+    height: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .secondHeader {
+    padding-bottom: 10px;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .secondHeader p {
+    font-size: 36px;
+    color: #fefeff;
+    font-family: 'bold';
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .accordian {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    padding: 10px 0px;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .accordian .individualAccordian {
+    padding: 0px 25px;
+    cursor: pointer;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .accordian .individualAccordian .individualAccordianHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .accordian .individualAccordian .individualAccordianHeader p {
+    font-size: 18px;
+    color: #1d1d22;
+    font-family: 'bold';
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .accordian .individualAccordian .individualAccordianHeader .iconWrapper .angleUpArrow {
+    display: none;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .accordian .individualAccordian .individualAccordianBody {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    height: 0px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .accordian .individualAccordian .individualAccordianBody p {
+    font-size: 14px;
+    color: #1d1d22;
+    font-family: 'SemiBold';
+    opacity: 0.48;
+    padding-bottom: 15px;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .accordian .individualAccordian:hover .individualAccordianHeader .iconWrapper .angleUpArrow {
+    display: block;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .accordian .individualAccordian:hover .individualAccordianHeader .iconWrapper .angleDownArrow {
+    display: none;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .accordian .individualAccordian:first-of-type .individualAccordianHeader .iconWrapper .angleUpArrow {
+    display: block;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .accordian .individualAccordian:first-of-type .individualAccordianHeader .iconWrapper .angleDownArrow {
+    display: none;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .secondSliderExploreBtn {
+    margin-top: 20px;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .secondSliderExploreBtn button {
+    background: #00205c 0% 0% no-repeat padding-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'bold';
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+html body .main .swiper-container .swiper-slide .secondSlider .row .secondSliderExploreBtn button .mr-10 {
+    margin-right: 10px;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider {
+    height: 100%;
+    width: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .bgCover {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url("../../assests/images/HomeImgSizeReduced/young-couple-buying-car-car-showroom.jpg");
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .whiteBackgroud {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.5;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row {
+    height: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .firstColumn {
+    height: 0;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .secondColumn {
+    height: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .thirdHeader {
+    padding-bottom: 10px;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .thirdHeader p {
+    font-size: 36px;
+    color: #1d1d22;
+    font-family: 'bold';
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .accordian {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    padding: 10px 0px;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .accordian .individualAccordian {
+    padding: 0px 25px;
+    cursor: pointer;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .accordian .individualAccordian .individualAccordianHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .accordian .individualAccordian .individualAccordianHeader p {
+    font-size: 18px;
+    color: #1d1d22;
+    font-family: 'bold';
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .accordian .individualAccordian .individualAccordianHeader .iconWrapper .angleUpArrow {
+    display: none;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .accordian .individualAccordian .individualAccordianBody {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    height: 0px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .accordian .individualAccordian .individualAccordianBody p {
+    font-size: 14px;
+    color: #1d1d22;
+    font-family: 'SemiBold';
+    opacity: 0.48;
+    padding-bottom: 15px;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .accordian .individualAccordian:hover .individualAccordianHeader .iconWrapper .angleUpArrow {
+    display: block;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .accordian .individualAccordian:hover .individualAccordianHeader .iconWrapper .angleDownArrow {
+    display: none;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .accordian .individualAccordian:first-of-type .individualAccordianHeader .iconWrapper .angleUpArrow {
+    display: block;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .accordian .individualAccordian:first-of-type .individualAccordianHeader .iconWrapper .angleDownArrow {
+    display: none;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .thirdSliderExploreBtn {
+    margin-top: 20px;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .thirdSliderExploreBtn button {
+    background: #00205c 0% 0% no-repeat padding-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'bold';
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+html body .main .swiper-container .swiper-slide .thirdSlider .row .thirdSliderExploreBtn button .mr-10 {
+    margin-right: 10px;
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider {
+    width: 100%;
+    height: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider .bgCover {
+    background-image: url("../../assests/images/HomeImgSizeReduced/aerial-view-business-team.jpg");
+    background-position: left;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider .whiteBackgroud {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.5;
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider .row {
+    height: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider .row .firstColumn {
+    height: 0;
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider .row .secondColumn {
+    height: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider .row .fourthHeader p {
+    font-size: 36px;
+    color: #ffffff;
+    font-family: 'bold';
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider .row .fourthSliderDesc {
+    padding-top: 10px;
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider .row .fourthSliderDesc p {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'SemiBold';
+    opacity: 0.6;
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider .row .fourthSliderExploreBtn {
+    margin-top: 20px;
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider .row .fourthSliderExploreBtn button {
+    background: #00205c 0% 0% no-repeat padding-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'bold';
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+html body .main .swiper-container .swiper-slide .fourthSlider .row .fourthSliderExploreBtn button .mr-10 {
+    margin-right: 10px;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider {
+    height: 100%;
+    width: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .bgCover {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url("../../assests/images/HomeImgSizeReduced/digital-composite.jpg");
+    background-position: center;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .whiteBackgroud {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.5;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row {
+    height: 100%;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthHeader p {
+    font-size: 36px;
+    color: #1d1d22;
+    font-family: 'bold';
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthSliderDesc {
+    padding-top: 10px;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthSliderDesc p {
+    font-size: 25px;
+    color: #1d1d22;
+    font-family: 'SemiBold';
+    opacity: 0.6;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthSliderExploreBtn {
+    margin-top: 20px;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthSliderExploreBtn button {
+    background: #00205c 0% 0% no-repeat padding-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'bold';
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthSliderExploreBtn button .mr-10 {
+    margin-right: 10px;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthsliderFooterWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthsliderFooterWrapper .fifthSliderFooter {
+    position: relative;
+    padding: 10px 20px;
+    background: #00205C 0% 0% no-repeat padding-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthsliderFooterWrapper .fifthSliderFooter p {
+    margin-right: 30px;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    font-family: 'SemiBold';
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthsliderFooterWrapper .fifthSliderFooter p .boldText {
+    font-family: 'bold';
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthsliderFooterWrapper .fifthSliderFooter .collabrateBtn button {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'bold';
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    background: none;
+    padding: 7px 21px;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthsliderFooterWrapper .fifthSliderFooter .footerpositionSvg1 {
+    position: absolute;
+    left: 0px;
+    bottom: -7px;
+    opacity: 0.7;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthsliderFooterWrapper .fifthSliderFooter .footerpositionSvg2 {
+    position: absolute;
+    right: 0px;
+    bottom: -7px;
+    opacity: 0.7;
+}
+
+html body .main .swiper-container .swiper-slide .fifthSlider .row .fifthsliderFooterWrapper .fifthSliderFooter .footerDesc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+html body button:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .swiper-slide .bgCover:not(:nth-last-of-type(1)) {
+        -webkit-filter: blur(1px);
+        filter: blur(1px);
+    }
+
+    .swiper-slide .whiteBackgroud {
+        background-color: white;
+    }
+
+    .swiper-slide .p-sm-40 {
+        padding: 40px;
+    }
+
+    .swiper-slide .firstHeader p {
+        font-size: 28px !important;
+    }
+
+    .swiper-slide .firstSubHeader p {
+        font-size: 16px !important;
+    }
+
+    .swiper-slide .fifthsliderFooterWrapper {
+        position: relative !important;
+    }
+
+    .swiper-slide .fifthsliderFooterWrapper .fifthSliderFooter .footerDesc {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .swiper-slide .fifthsliderFooterWrapper .fifthSliderFooter .footerDesc p {
+        margin-right: 0px !important;
+        margin-bottom: 20px !important;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .swiper-slide .bgCover:not(:nth-last-of-type(1)) {
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+    }
+
+    .swiper-slide .whiteBackgroud {
+        background-color: white;
+    }
+
+    .fifthsliderFooterWrapper .fifthSliderFooter .footerDesc {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .fifthsliderFooterWrapper .fifthSliderFooter .footerDesc p {
+        margin-right: 0px !important;
+        margin-bottom: 20px !important;
+        text-align: center;
+    }
+}
+
+/*# sourceMappingURL=index.css.map */

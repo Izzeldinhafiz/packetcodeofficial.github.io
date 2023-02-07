@@ -1,0 +1,746 @@
+@import '../vairables/variables.scss';
+
+html {
+    position: relative;
+    height: 100%;
+
+    body {
+        position: relative;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        .main {
+            padding-top: 68px;
+            position: relative;
+            height: 100%;
+
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                .swiper-pagination-bullet-active {
+                    border: 6.5px solid white;
+                    background-color: white;
+                    width: 0px !important;
+                    height: 0px !important;
+                    opacity: 1 !important;
+                }
+
+                .swiper-pagination-bullet {
+                    background-color: white;
+                    opacity: 0.6;
+                }
+
+                .swiper-pagination-clickable {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-direction: column;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                // .swiper-pagination-bullet-active:nth-of-type(1) {
+                //     background: #fff !important;
+                // }
+                // .swiper-pagination-bullet:nth-of-type(1) {
+                //     background: #fff !important;
+                // }
+                .dotts {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #000;
+                }
+
+                .swiper-slide {
+                    height: 100%;
+                    width: 100%;
+
+                    .bgCover {
+                        height: 100%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 100%;
+                        // background-position: center;
+                    }
+
+                    .firstSlider {
+
+                        // background-image: url('../../assets/images/HomeImgSizeReduced/beautiful-shot-mills-field-with-sun-rising.jpg');
+                        // background-image: url('../../assets/videos/simpleshow_[EN]_AINQA_OurPerspective_17Nov2020.mp4');
+                        video {
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+                            min-width: 100%;
+                            min-height: 100%;
+                            filter: brightness(0.7);
+                        }
+
+                        .container {
+                            height: 100%;
+                        }
+
+                        .downButton {
+                            cursor: pointer;
+                        }
+
+                        .row {
+                            height: 100%;
+
+                            .p-sm-40 {
+                                padding: 15px;
+                                // animation-iteration-count: 1;
+                                // animation: mymove 2s;
+                            }
+
+                            @keyframes mymove {
+
+                                // from {left: -150px;}
+                                // to {left: 0px;}
+                                0% {
+                                    left: -150px;
+                                }
+
+                                70% {
+                                    left: 0px;
+                                }
+                            }
+
+                            .firstHeader {
+                                p {
+                                    font-size: $fontSize1;
+                                    color: #FFFFFF;
+                                    font-family: 'bold';
+                                    text-transform: uppercase;
+                                    margin-bottom: 8px;
+                                    text-align: center;
+                                    // text-shadow: 2px 2px 2px #000000;
+                                }
+
+                                // text-align: center;
+                                // padding: 20px;
+                            }
+
+                            .firstSubHeader {
+                                .bgWrapper {
+                                    background: #1d1d228c 0% 0% no-repeat padding-box;
+                                    padding: 10px 30px;
+                                    display: inline-block;
+                                    border-radius: 36px;
+
+                                    p {
+                                        font-size: $fontSize3;
+                                        color: #FFFFFF;
+                                        font-family: 'SemiBoldItalic';
+                                    }
+                                }
+                            }
+
+                            .downButton {
+                                position: absolute;
+                                bottom: 25%;
+
+                            }
+                        }
+                    }
+
+                    .secondSlider {
+                        // background-image: url('../../assets/images/HomeImgSizeReduced/doctor-is-going-examine-his-patient-using-his-stethoscope-sitting-people.jpg');
+                        // background-position: bottom;
+                        height: 100%;
+                        width: 100%;
+
+                        .bgCover {
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+                            min-width: 100%;
+                            min-height: 100%;
+                            // filter: blur(2px);
+                            background-image: url('../../assets/images/HomeImgSizeReduced/Home-Insights.jpg');
+                            background-position: center;
+                        }
+
+                        .whiteBackgroud {
+                            // background: white;
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+                            min-width: 100%;
+                            min-height: 100%;
+                            opacity: 0.5;
+                        }
+
+                        .row {
+                            height: 100%;
+
+                            .firstColumn {
+                                height: 0;
+                            }
+
+                            .secondColumn {
+                                height: 100%;
+                            }
+
+                            .secondHeader {
+                                padding-bottom: 10px;
+
+                                p {
+                                    font-size: $fontSize2;
+                                    color: $darkColor;
+                                    font-family: 'bold';
+                                }
+                            }
+
+                            .accordian {
+                                background: #FFFFFF 0% 0% no-repeat padding-box;
+                                border-radius: 16px;
+                                opacity: 1;
+                                backdrop-filter: blur(50px);
+                                -webkit-backdrop-filter: blur(50px);
+                                padding: 10px 0px;
+
+                                .individualAccordian {
+                                    padding: 0px 25px;
+                                    cursor: pointer;
+
+                                    .individualAccordianHeader {
+                                        display: flex;
+                                        align-items: center;
+                                        // padding-top: 20px;
+                                        padding: 15px 0px;
+
+                                        p {
+                                            font-size: $fontSize4;
+                                            color: $darkColor;
+                                            font-family: 'bold';
+                                            flex: 1;
+                                        }
+
+                                        .iconWrapper {
+                                            .angleUpArrow {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+
+                                    .individualAccordianBody {
+                                        // margin: 10px 0px;
+                                        transition: 0.5s;
+                                        height: 0px;
+                                        overflow: hidden;
+                                        display: flex;
+                                        align-items: center;
+
+                                        p {
+                                            font-size: $fontSize5;
+                                            color: $darkColor;
+                                            font-family: 'SemiBold';
+                                            opacity: 0.48;
+                                            padding-bottom: 15px;
+                                        }
+                                    }
+                                }
+
+                                .individualAccordian:hover {
+                                    .individualAccordianHeader {
+                                        .iconWrapper {
+                                            .angleUpArrow {
+                                                display: block;
+                                            }
+
+                                            .angleDownArrow {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .individualAccordian:first-of-type {
+                                    .individualAccordianHeader {
+                                        .iconWrapper {
+                                            .angleUpArrow {
+                                                display: block;
+                                            }
+
+                                            .angleDownArrow {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .secondSliderExploreBtn {
+                                margin-top: 20px;
+
+                                button {
+                                    background: $darkBlueColor 0% 0% no-repeat padding-box;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #FFFFFF;
+                                    font-size: $fontSize5;
+                                    font-family: 'bold';
+                                    padding: 15px 25px;
+                                    border-radius: 8px;
+
+                                    .mr-10 {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .thirdSlider {
+                        // background-image: url('../../assets/images/HomeImgSizeReduced/doctor-examining-his-young-patient1.jpg');
+                        height: 100%;
+                        width: 100%;
+
+                        .bgCover {
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+                            min-width: 100%;
+                            min-height: 100%;
+                            // filter: blur(2px);
+                            background-image: url('../../assets/images/HomeImgSizeReduced/Home-Services.jpg');
+                            // background-position: center
+                        }
+
+                        .whiteBackgroud {
+                            // background: white;
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+                            min-width: 100%;
+                            min-height: 100%;
+                            opacity: 0.5;
+                        }
+
+                        .row {
+                            height: 100%;
+
+                            .firstColumn {
+                                height: 0;
+                            }
+
+                            .secondColumn {
+                                height: 100%;
+                            }
+
+                            .thirdHeader {
+                                padding-bottom: 10px;
+
+                                p {
+                                    font-size: $fontSize2;
+                                    color: $darkColor;
+                                    font-family: 'bold';
+                                }
+                            }
+
+                            .accordian {
+                                background: #FFFFFF 0% 0% no-repeat padding-box;
+                                border-radius: 16px;
+                                opacity: 1;
+                                backdrop-filter: blur(50px);
+                                -webkit-backdrop-filter: blur(50px);
+                                padding: 10px 0px;
+
+                                .individualAccordian {
+                                    padding: 0px 25px;
+                                    cursor: pointer;
+
+                                    .individualAccordianHeader {
+                                        display: flex;
+                                        align-items: center;
+                                        // padding-top: 20px;
+                                        padding: 15px 0px;
+
+                                        p {
+                                            font-size: $fontSize4;
+                                            color: $darkColor;
+                                            font-family: 'bold';
+                                            flex: 1;
+                                        }
+
+                                        .iconWrapper {
+                                            .angleUpArrow {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+
+                                    .individualAccordianBody {
+                                        // margin: 10px 0px;
+                                        transition: 0.5s;
+                                        height: 0px;
+                                        overflow: hidden;
+                                        display: flex;
+                                        align-items: center;
+
+                                        p {
+                                            font-size: $fontSize5;
+                                            color: $darkColor;
+                                            font-family: 'SemiBold';
+                                            opacity: 0.48;
+                                            padding-bottom: 15px;
+                                        }
+                                    }
+                                }
+
+                                .individualAccordian:hover {
+                                    .individualAccordianHeader {
+                                        .iconWrapper {
+                                            .angleUpArrow {
+                                                display: block;
+                                            }
+
+                                            .angleDownArrow {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .individualAccordian:first-of-type {
+                                    .individualAccordianHeader {
+                                        .iconWrapper {
+                                            .angleUpArrow {
+                                                display: block;
+                                            }
+
+                                            .angleDownArrow {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .thirdSliderExploreBtn {
+                                margin-top: 20px;
+
+                                button {
+                                    background: $darkBlueColor 0% 0% no-repeat padding-box;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #FFFFFF;
+                                    font-size: $fontSize5;
+                                    font-family: 'bold';
+                                    padding: 15px 25px;
+                                    border-radius: 8px;
+
+                                    .mr-10 {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .fourthSlider {
+                        // background-image: url('../../assets/images/HomeImgSizeReduced/professional-doctor-office1.jpg');
+                        width: 100%;
+                        height: 100%;
+
+                        .bgCover {
+                            background-image: url('../../assets/images/HomeImgSizeReduced/Home-Core-Team.jpg');
+                            background-position: left;
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+                            min-width: 100%;
+                            min-height: 100%;
+                            // filter: blur(2px);
+                        }
+
+                        .whiteBackgroud {
+                            // background: white;
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+                            min-width: 100%;
+                            min-height: 100%;
+                            opacity: 0.5;
+                        }
+
+                        .row {
+                            height: 100%;
+
+                            .firstColumn {
+                                height: 0;
+                            }
+
+                            .secondColumn {
+                                height: 100%;
+                            }
+
+                            .fourthHeader {
+
+                                // padding-bottom: 20px;
+                                p {
+                                    font-size: $fontSize2;
+                                    color: $darkColor;
+                                    font-family: 'bold';
+                                }
+                            }
+
+                            .fourthSliderDesc {
+                                padding-top: 10px;
+
+                                p {
+                                    font-size: $fontSize3;
+                                    color: $darkColor;
+                                    font-family: 'SemiBold';
+                                    opacity: 0.6;
+                                }
+                            }
+
+                            .fourthSliderExploreBtn {
+                                margin-top: 20px;
+
+                                button {
+                                    background: $darkBlueColor 0% 0% no-repeat padding-box;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #FFFFFF;
+                                    font-size: $fontSize5;
+                                    font-family: 'bold';
+                                    padding: 15px 25px;
+                                    border-radius: 8px;
+
+                                    .mr-10 {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .fifthSlider {
+                        // background-image: url('../../assets/images/HomeImgSizeReduced/senior-couple-embracing-each-other1.jpg');
+                        height: 100%;
+                        width: 100%;
+
+                        .bgCover {
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+                            min-width: 100%;
+                            min-height: 100%;
+                            // filter: blur(2px);
+                            background-image: url('../../assets/images/HomeImgSizeReduced/Home-Digital-Care.jpg');
+                            background-position: center;
+                        }
+
+                        .whiteBackgroud {
+                            // background: white;
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+                            min-width: 100%;
+                            min-height: 100%;
+                            opacity: 0.5;
+                        }
+
+                        .row {
+                            height: 100%;
+
+                            // .firstColumn{
+                            //     height: 0;
+                            // }
+                            // .secondColumn{
+                            //     height: 100%;
+                            // }
+                            .fifthHeader {
+
+                                // padding-bottom: 20px;
+                                p {
+                                    font-size: $fontSize2;
+                                    color: $darkColor;
+                                    font-family: 'bold';
+                                }
+                            }
+
+                            .fifthSliderDesc {
+                                padding-top: 10px;
+
+                                p {
+                                    font-size: $fontSize3;
+                                    color: $darkColor;
+                                    font-family: 'SemiBold';
+                                    opacity: 0.6;
+                                }
+                            }
+
+                            .fifthSliderExploreBtn {
+                                margin-top: 20px;
+
+                                button {
+                                    background: $darkBlueColor 0% 0% no-repeat padding-box;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: #FFFFFF;
+                                    font-size: $fontSize5;
+                                    font-family: 'bold';
+                                    padding: 15px 25px;
+                                    border-radius: 8px;
+
+                                    .mr-10 {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+
+                            .fifthsliderFooterWrapper {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+
+                                .fifthSliderFooter {
+                                    position: relative;
+                                    padding: 10px 20px;
+                                    background: #00205C 0% 0% no-repeat padding-box;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    p {
+                                        margin-right: 30px;
+                                        font-size: $fontSize5;
+                                        color: #FFFFFF;
+                                        margin-bottom: 0px;
+                                        font-family: 'SemiBold';
+
+                                        .boldText {
+                                            font-family: 'bold';
+                                        }
+                                    }
+
+                                    .collabrateBtn {
+                                        button {
+                                            font-size: $fontSize5;
+                                            color: #FFFFFF;
+                                            font-family: 'bold';
+                                            border: 2px solid #FFFFFF;
+                                            border-radius: 8px;
+                                            background: none;
+                                            padding: 7px 21px;
+                                        }
+                                    }
+
+                                    .footerpositionSvg1 {
+                                        position: absolute;
+                                        left: 0px;
+                                        bottom: -7px;
+                                        opacity: 0.7;
+                                    }
+
+                                    .footerpositionSvg2 {
+                                        position: absolute;
+                                        right: 0px;
+                                        bottom: -7px;
+                                        opacity: 0.7;
+                                    }
+
+                                    .footerDesc {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        button:focus {
+            box-shadow: none !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .swiper-slide {
+        .bgCover:not(:nth-last-of-type(1)) {
+            filter: blur(1px);
+        }
+
+        .whiteBackgroud {
+            background-color: white;
+        }
+
+        .p-sm-40 {
+            padding: 40px;
+        }
+
+        .firstHeader {
+            p {
+                font-size: 28px !important;
+            }
+        }
+
+        .firstSubHeader {
+            p {
+                font-size: 16px !important;
+            }
+        }
+
+        .fifthsliderFooterWrapper {
+            position: relative !important;
+
+            .fifthSliderFooter {
+                .footerDesc {
+                    flex-direction: column;
+
+                    p {
+                        margin-right: 0px !important;
+                        margin-bottom: 20px !important;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    .swiper-slide {
+        .bgCover:not(:nth-last-of-type(1)) {
+            filter: blur(2px);
+        }
+
+        .whiteBackgroud {
+            background-color: white;
+        }
+    }
+
+    .fifthsliderFooterWrapper {
+
+        // position: relative !important;
+        .fifthSliderFooter {
+            .footerDesc {
+                flex-direction: column;
+
+                p {
+                    margin-right: 0px !important;
+                    margin-bottom: 20px !important;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
